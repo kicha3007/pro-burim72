@@ -1,11 +1,12 @@
 @import '__vars';
 @import '__mixins';
 @import "smart-grid";
-/*@import "base";*/
+@import "base";
 
 /******************* sportmpro *******************/
 
-/*@import 'sportmpro/header';
+/*
+@import 'sportmpro/header';
 @import "sportmpro/nav";
 @import "sportmpro/breadcrumbs";
 @import "sportmpro/card";
@@ -20,10 +21,12 @@
 @import "sportmpro/base-card";
 @import "sportmpro/examples";
 @import "sportmpro/base-steps";
-@import "sportmpro/seo-text";*/
+@import "sportmpro/seo-text";
+*/
 
 
 /******************* vetklinika72 *******************/
+/*
 
 @import 'vetklinika72/header';
 @import "vetklinika72/nav";
@@ -37,16 +40,21 @@
 @import "vetklinika72/reviews";
 @import "vetklinika72/help";
 @import "vetklinika72/footer";
+*/
 
+
+
+/******************* pro-burim72 *******************/
+
+@import 'pro-burim72/base-offer';
+@import 'pro-burim72/advantages';
 
 
 
 /******************* it-all-style *******************/
 
-
-
 .it-container {
-  max-width: 990px;
+  max-width: 1030px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -68,24 +76,57 @@
 //}
 
 .it-all-title {
+  text-align: center;
   padding-top: 80px;
-  padding-bottom: 60px;
-  font-size: rem(30px);
+  padding-bottom: 40px;
+  font-size: rem(26px);
   line-height: 1.4;
-  font-weight: 700;
   position: relative;
-  color: #333333;
+  color: #444444;
   margin: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+
   @include tablets {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   @include phones {
-    font-size: rem(32px);
+    font-size: rem(18px);
     padding-top: 40px;
     padding-bottom: 20px;
   }
 }
+
+
+.it-all-title__text {
+  position: relative;
+  display: inline-block;
+}
+
+
+.it-all-title__text:before, .it-all-title__text:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 500px;
+  background-color: #D9D9D9;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+}
+
+.it-all-title__text:before {
+  left: auto;
+  right: 104%;
+}
+
+.it-all-title__text:after {
+  left: 104%;
+  right: auto;
+}
+
+
 
 .it-all-subtitle {
   font-size: rem(16px);
@@ -152,16 +193,16 @@
   text-align: center;
   user-select: none;
   border: none;
-  padding: 16.5px 10px;
-  font-size: 14px;
+  padding: 8.5px 10px;
+  font-size: 15px;
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
   color: #ffffff;
-  text-transform: none;
   cursor: pointer;
   text-decoration: none;
   border-radius: 3px;
   position: relative;
+  text-transform: uppercase;
 }
 
 .it-btn:hover {
