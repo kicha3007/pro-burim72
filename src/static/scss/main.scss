@@ -47,7 +47,12 @@
 /******************* pro-burim72 *******************/
 
 @import 'pro-burim72/base-offer';
+@import 'pro-burim72/price';
 @import 'pro-burim72/advantages';
+@import 'pro-burim72/discount';
+@import 'pro-burim72/services';
+@import 'pro-burim72/about-us';
+@import 'pro-burim72/schema';
 
 
 
@@ -130,16 +135,14 @@
 
 .it-all-subtitle {
   font-size: rem(16px);
-  font-weight: 300;
-  text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  @include phones {
+    padding-bottom: 20px;
+  }
 }
 
 .it-all-title + .it-all-subtitle {
-  margin-top: -25px;
-  @include phones {
-    margin-top: -10px;
-  }
+  margin-top: -15px;
 }
 
 //.it-all-title:before,

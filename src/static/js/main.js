@@ -1,3 +1,18 @@
+/* ------------------- steps ------------------- */
+
+$(document).on("scroll", function () {
+
+    $("[data-step-item]").each(function () {
+        if (window.scrollY > this.offsetTop - 700) {
+
+            $(this).addClass("active");
+        }
+
+    })
+});
+
+
+
 
 
 
