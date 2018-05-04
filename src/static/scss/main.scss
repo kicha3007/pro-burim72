@@ -53,6 +53,8 @@
 @import 'pro-burim72/services';
 @import 'pro-burim72/about-us';
 @import 'pro-burim72/schema';
+@import 'pro-burim72/factors';
+@import 'pro-burim72/callback';
 
 
 
@@ -181,9 +183,9 @@
 }
 
 .it-main-page__wrapper {
-  position: relative;
+/*  position: relative;
   min-height: 100%;
-  margin-bottom: -103px;
+  margin-bottom: -103px;*/
   overflow: hidden;
 }
 
