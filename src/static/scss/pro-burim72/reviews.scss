@@ -6,9 +6,13 @@
   padding: 0 0  80px;
 }
 
+
 .it-reviews__item {
   max-width: 319px;
   width: 100%;
+  @include laptop {
+    max-width: 100%;
+  }
 }
 
 .it-reviews__video {
@@ -16,6 +20,7 @@
   display: block;
   text-decoration: none;
   margin-bottom: 20px;
+
 }
 
 .it-reviews__video:hover {
@@ -37,7 +42,23 @@
   color: #444444;
 }
 
+.it-reviews__link {
+  margin-bottom: 15px;
+  color:rgba(52, 160, 205, 1);
+  text-decoration: underline;
+  font-size: 14px;
+}
 
+.it-reviews__link:hover {
+	color: rgba(52, 160, 205, 0.7);
+   text-decoration: none;
+}
+
+.it-reviews__link:active,
+.it-reviews__link:visited {
+	color: rgba(52, 160, 205, 1);
+	text-decoration: none;
+}
 
 /******************* reviews+owl *******************/
 

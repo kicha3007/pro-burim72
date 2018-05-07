@@ -64,6 +64,10 @@
   width: 100%;
   margin: 0 10px 25px;
   max-width: 240px;
+  @include phones {
+      max-width: 250px;
+      flex-basis: 250px;
+  }
 }
 
 
@@ -98,7 +102,11 @@
   width: 100%;
   margin-top: auto;
   flex-grow: 1;
-  flex-basis: 100px;
+  flex-basis: 120px;
+  @include phones {
+    max-width: 250px;
+    flex-basis: 250px;
+  }
 }
 
 

@@ -4,12 +4,14 @@
 
 .it-discount__wrap {
   @include row-flex();
+  margin-bottom: -40px;
 }
 
 .it-discount__half {
   @include col();
   @include size(6);
   @include size-sm(12);
+  margin-bottom: 40px;
 }
 
 .it-discount__half--left {
@@ -18,6 +20,12 @@
   align-items: center;
   padding: 5% 4%;
   background-color: #34A0CD;
+}
+
+.it-discount__half--right {
+  @include phones {
+    display: none;
+  }
 }
 
 .it-discount__title {
@@ -37,4 +45,7 @@
 .it-discount__buttons {
   max-width: 170px;
   width: 100%;
+  @include phones {
+      margin: 0 auto;
+  }
 }
