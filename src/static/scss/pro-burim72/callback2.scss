@@ -54,7 +54,7 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin: 0 -10px 0;
+  margin: 0 -10px 10px;
   overflow: hidden;
 }
 
@@ -63,7 +63,7 @@
   flex-basis: 180px;
   width: 100%;
   margin: 0 10px 25px;
-  max-width: 260px;
+  max-width: 240px;
 }
 
 
@@ -94,7 +94,7 @@
 }
 
 .it-callback__buttons {
-  max-width: 100px;
+  max-width: 135px;
   width: 100%;
   margin-top: auto;
   flex-grow: 1;
@@ -211,7 +211,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 0 5px;
+  margin: 0;
 }
 
 .it-checkbox--size {
@@ -253,28 +253,5 @@
 }
 
 
-/******************* it-callback2 *******************/
 
-.it-callback--color {
-  background-color: transparent;
-}
 
-.it-callback__wrap--border {
-  border: 1px solid #34A0CD;
-}
-
-.it-callback-title--color {
-  color: #444444;
-}
-
-.it-callback-subtitle--color {
-  color: #666666;
-}
-
-.it-checkbox__text--color {
-  color: #666666;
-}
-
-.it-callback__wrap--indent {
-  padding: 0 15px;
-}
