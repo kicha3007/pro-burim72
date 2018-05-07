@@ -60,10 +60,10 @@
 
 .it-callback__half {
   flex-grow: 1;
-  flex-basis: 180px;
+  flex-basis: 190px;
   width: 100%;
   margin: 0 10px 25px;
-  max-width: 260px;
+  max-width: 240px;
 }
 
 
@@ -94,7 +94,7 @@
 }
 
 .it-callback__buttons {
-  max-width: 100px;
+  max-width: 135px;
   width: 100%;
   margin-top: auto;
   flex-grow: 1;
@@ -276,5 +276,5 @@
 }
 
 .it-callback__wrap--indent {
-  padding: 0 15px;
+  padding: 4% 15px;
 }
