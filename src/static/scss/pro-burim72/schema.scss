@@ -54,8 +54,10 @@
 .it-schema__desc {
   font-size: 16px;
   color: #666666;
+  min-height: 110px;
   @include phones {
     font-size: 14px;
+    min-height: auto;
   }
 }
 
@@ -95,7 +97,8 @@
   top: 47px;
   bottom: 47px;
   right: 0;
-  width: 1px;
+  width: 3px;
+  margin-right: -1.5px;
   height: calc(100% - 60px);
   background-color: #FF8900;
 }
@@ -103,6 +106,8 @@
 .it-schema__item:nth-child(even) .it-schema__half:before {
   right: auto;
   left: 0;
+  margin-right: 0;
+  margin-left: -1.5px;
 }
 
 
