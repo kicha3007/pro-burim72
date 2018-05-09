@@ -5,6 +5,10 @@
 
 /******************* it-header *******************/
 
+.it-header {
+  position: relative;
+}
+
 .it-header__top {
   padding: 2% 0;
   display: flex;
@@ -99,6 +103,9 @@
 .it-phone {
   position: relative;
   padding-left: 40px;
+  @include phones {
+    padding-left: 30px;
+  }
 }
 
 .it-location:before,
@@ -232,6 +239,7 @@
   @include row-flex();
   padding: 10px 0;
 
+  margin-bottom: -10px;
 }
 
 .it-header__half--size-5 {
@@ -239,6 +247,9 @@
   @include size(9);
   @include size-xs(12);
   align-items: center;
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 
 .it-header__half--size-6 {
