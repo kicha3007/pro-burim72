@@ -2,8 +2,8 @@
 @import "../__mixins";
 @import "../smart-grid";
 
+
 .it-main-nav__wrap {
-  overflow: visible;
   @include phones {
     display: none;
     position: absolute;
@@ -17,19 +17,12 @@
 
 }
 
-
-
-.it-main-nav {
-  overflow: visible;
-}
-
 .it-main-nav__list {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   z-index: 1000;
   margin: 0;
-  overflow: visible;
   @include tablets {
     padding-left: 35px;
 
@@ -45,11 +38,6 @@
 
 }
 
-.it-main-nav__list--fix-size {
-  min-width: 500px;
-  overflow: scroll;
-}
-
 .it-main-nav__list > li {
   list-style-type: none;
   position: relative;
@@ -61,15 +49,12 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     overflow: hidden;
     padding-left: 25px;
-
-
   }
 }
 
 
 .it-main-nav__list ul {
   z-index: 1000;
-
 }
 
 .it-main-nav__list > li > a {
@@ -77,10 +62,11 @@
   display: block;
   font-size: 16px;
   font-weight: 400;
-  color: #6D6D6D;
+  color: #ffffff;
   transition: .2s;
-  @include tablets {
-    padding-right: 28px;
+  @include laptop {
+    padding-right: 15px;
+    font-size: 14px;
   }
   @include phones {
     color: #4F4F4F;
@@ -100,16 +86,16 @@
 .it-main-nav__list > li > a:active,
 .it-main-nav__list > li.active > a,
 .it-main-nav__list > li:hover > a {
-  color: $main-color;
+  color: #ffffff;
   font-weight: 400;
-  text-decoration: none;
+  text-decoration: underline;
 
 }
 
 
-/*.it-main-nav__list > li > a:visited {
-  color: #6D6D6D;
-}*/
+  .it-main-nav__list > li > a:visited {
+  color: #ffffff;
+}
 
 
 
@@ -176,10 +162,10 @@
 
 .it-main-nav__list > li > ul > li.active > a,
 .it-main-nav__list > li > ul > li:hover > a {
-  background-color: #979797;
+  background-color: #f2f2f2;
   font-weight: 400;
   text-decoration: none;
-  color: $main-color;
+  color: rgba(0, 0, 0, .87);
 
 }
 
@@ -237,20 +223,30 @@
 .it-main-nav__list li a:first-child:nth-last-child(2):after {
   position: absolute;
   content: "";
-  width: 12px;
-  height: 8px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+  z-index: 2;
+  pointer-events: none;
   top: 50%;
   right: 18px;
-  margin-top: -4px;
+  margin-top: -1px;
   transition: .2s;
-  background: url("../img/crypto/nav/arrow.png") center no-repeat;
-  @include tablets {
-    right: 15px;
+
+  @include laptop {
+    right: 4px;
   }
   @include phones {
     display: none;
 
   }
+}
+
+
+.it-main-nav__list> li>ul>li a:first-child:nth-last-child(2):after {
+  border-top: 5px solid rgba(0, 0, 0, .87);
 }
 
 .it-main-nav__list > li:first-child:hover a,
@@ -269,7 +265,7 @@
   left: 0;
   top: 0;
   width: 70px;
-  height: 100%;
+  height: 70px;
   position: absolute;
   cursor: pointer;
   -webkit-transition: all 0.2s;
